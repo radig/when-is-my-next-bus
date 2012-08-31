@@ -34,7 +34,7 @@ class BusLineController extends \lithium\action\Controller {
 	public function edit()
 	{	
 		if(!empty($this->request->data)) {
-			BusLine::update(array('_id' => $this->request->data['_id'], $this->request->data));
+			BusLine::update($this->request->data, array('_id' => $this->request->params['id']));
 			$this->redirect('BusLine::index');
 	    }
 

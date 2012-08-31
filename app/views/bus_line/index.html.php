@@ -4,7 +4,7 @@
 		<th>Ações</th>
 	<tr>
 <?php
-	foreach ($buses as $bus) {
+	foreach ($buses as $bus):
 ?>
 	<tr>
 		<td><?php echo $bus->name; ?></td>
@@ -19,7 +19,7 @@
 		</td>
 	</tr>
 <?php
-	}
+	endforeach;
 ?>
 </table>
 <div>
