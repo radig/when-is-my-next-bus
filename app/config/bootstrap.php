@@ -24,6 +24,11 @@
  */
 
 /**
+*	Loading local configurations
+*/
+require __DIR__ . '/bootstrap/bootstrap.local.php';
+
+/**
  * The libraries file contains the loading instructions for all plugins, frameworks and other class
  * libraries used in the application, including the Lithium core, and the application itself. These
  * instructions include library names, paths to files, and any applicable class-loading rules. This
